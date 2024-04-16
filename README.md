@@ -45,4 +45,4 @@ Learned a lot about lifting state up, as this is my first time working on web ap
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/himym413)
+- Frontend Mentor - [@himym413](https://www.frontendmentor.io/profile/himym413)
