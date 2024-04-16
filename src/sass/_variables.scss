@@ -1,0 +1,23 @@
+// Colors
+$clr-primary: hsl(172, 67%, 45%);
+
+$clr-neutral-700: hsl(183, 100%, 15%);
+$clr-neutral-600: hsl(186, 14%, 43%);
+$clr-neutral-500: hsl(184, 14%, 56%);
+$clr-neutral-300: hsl(185, 41%, 84%);
+$clr-neutral-200: hsl(189, 41%, 97%);
+$clr-neutral-100: hsl(0, 0%, 100%);
+
+// Font
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+$ff-primary: "Space Mono", monospace;
+
+$fw-regular: 400;
+$fw-bold: 700;
+
+// Breakpoints
+$bp-mobile-end: 767px;
+$bp-tablet-start: 768px;
+$bp-tablet-end: 1199px;
+$bp-desktop-start: 1200px;

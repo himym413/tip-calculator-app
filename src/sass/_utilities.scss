@@ -1,0 +1,112 @@
+@use "./variables";
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.color-light {
+  color: variables.$clr-neutral-300;
+}
+
+.color-primary {
+  color: variables.$clr-primary;
+}
+
+.color-faded {
+  color: variables.$clr-neutral-600;
+}
+
+.fs-small {
+  font-size: 12px;
+}
+
+.label-on-top {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+label {
+  color: variables.$clr-neutral-500;
+}
+
+.error-zero {
+  position: relative;
+
+  input {
+    border: 4px solid red !important;
+  }
+
+  &:after {
+    content: "Can't be zero";
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: red;
+  }
+}
+
+.btn-primary {
+  color: variables.$clr-neutral-700;
+  background-color: variables.$clr-primary;
+  width: 100%;
+  text-align: center;
+  padding-block: 0.5rem;
+  border-radius: 0.25rem;
+  margin-top: 1rem;
+}
+
+input.input-bill {
+  background: url("../images/icon-dollar.svg");
+}
+
+input.input-people {
+  background: url("../images/icon-person.svg");
+}
+
+input.input-primary {
+  border: 4px solid transparent;
+  outline: none;
+  background-repeat: no-repeat;
+  background-position: 1rem 0.95rem;
+  background-color: variables.$clr-neutral-200;
+  text-align: right;
+  width: 100%;
+  padding: 0.5rem;
+  padding-left: 2.5rem;
+  color: variables.$clr-neutral-700;
+  font-size: 1.25rem;
+  border-radius: 0.25rem;
+  caret-color: variables.$clr-primary;
+}
+
+.single-option {
+  padding: 0.5rem 1.5rem;
+  background-color: variables.$clr-neutral-700;
+  color: variables.$clr-neutral-100;
+  text-align: center;
+  border-radius: 0.25rem;
+  font-size: 1.25rem;
+
+  &-input {
+    padding: 0 1rem !important;
+  }
+
+  &-active {
+    color: variables.$clr-neutral-700 !important;
+    background-color: variables.$clr-primary !important;
+  }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
